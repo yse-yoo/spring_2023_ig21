@@ -15,7 +15,7 @@ public class RestSampleController {
     }
 
     @GetMapping(value="/bye")
-    public String bye(@RequestParam String param) {
+    public String bye(@RequestParam(name = "name", required = false) String param) {
         String message = "Bye! " + param;
         return message;
     }

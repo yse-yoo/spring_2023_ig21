@@ -9,6 +9,7 @@ public class HomeController {
     
     @GetMapping(value="/admin/")
     public String index() {
+        // templates/admin/index.html がレンダリング
         return "admin/index";
     }
     

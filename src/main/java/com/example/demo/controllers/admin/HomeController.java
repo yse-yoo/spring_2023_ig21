@@ -14,4 +14,9 @@ public class HomeController {
         return "admin/index";
     }
     
+    @GetMapping("hello")
+    public String hello() {
+        // templates/admin/index.html がレンダリング
+        return "admin/index";
+    }
 }
